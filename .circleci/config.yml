@@ -1,8 +1,20 @@
 version: 2.1
 jobs:
-  build:
+  bobby:
     docker:
       - image: cimg/node:17.2.0
     steps:
       - checkout
       - run: node --version
+  sally:
+    docker:
+      - image: cimg/node:17.2.0
+    steps:
+      - checkout
+      - run: echo "Double trouble"
+  workflows:
+    version: 2
+    bobby_sally:
+      jobs:
+        - bobby
+        - sally
