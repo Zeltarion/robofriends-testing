@@ -35,7 +35,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "precommit": "/node_modules/pretty-quick/bin/pretty-quick.js --staged"
+    "precommit": "/node_modules/pretty-quick/bin/pretty-quick.js"
   },
   "browserslist": {
     "production": [
